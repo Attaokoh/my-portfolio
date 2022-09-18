@@ -13,7 +13,7 @@ let open = document.querySelector(".fa-bars");
       });
 
 // change nav links color
-let changeColor = document.querySelector(".change-color")
+let changeColor = document.querySelector("nav")
       window.addEventListener("scroll", () => {
         if(window.scrollY >= 3){
             changeColor.classList.add(".changed")
