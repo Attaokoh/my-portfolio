@@ -1,0 +1,610 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --btn-bgc-hover: rgba(255, 255, 255, 0.8);
+    --body-color: rgb(100, 100, 100);
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0 auto;
+    font-size: 62.5%;
+    background: linear-gradient(145deg, rgba(154, 161, 164, 0.11), rgba(0, 255, 251, 0.091)), url(img/escheresque.png);
+}
+.container{
+    margin: 0 auto;
+    background: linear-gradient(145deg, rgba(241, 241, 241, 0.71), rgba(0, 255, 251, 0.091)), url(img/escheresque.png);
+}
+/* .everything{
+    margin-left: 160px;
+} */
+p{
+    opacity: 0.8 !important;
+    font-weight: normal !important;
+    z-index: -100;
+}
+.logo{
+    display: none;
+}
+.fa-bars{
+    display: none;
+}
+.nav-links{
+    position: fixed;
+    left: 5%;
+    /* background-color: #000;
+    height: 100%;
+    padding: 10% 28px 0px; */
+}
+.nav-links ul{
+    list-style: none;
+}
+.nav-links ul li{
+    display: block;
+    margin-bottom: 20px;
+}
+.nav-links ul li a{ 
+    font-size: 1rem;
+    text-decoration: none;
+    color: goldenrod;
+    width: 50px;
+    font-weight: bold;
+    transition: 0.5s ease-in-out;
+    padding: 5px;
+}
+.nav-links a:active{
+    text-decoration: underline;
+}
+.nav-links a:focus{
+    text-decoration: underline;
+}
+.nav-links a:hover{
+    text-decoration: underline;
+}
+.nav-links ul li .fa-times{
+    display: none;
+}
+.changed{
+    color: white;
+}
+
+
+/* Intro style */
+.intro{
+    font-size: 1rem;
+}
+.introText-image{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 50px;
+}
+.introText{
+    max-width: 500px;
+    padding-right: 40px;
+}
+.introText h1{
+    padding-bottom:20px;
+}
+.introText h3{
+    padding: 10px 0px;
+}
+.introText p{
+    line-height: 23px;
+    color: var(--body-color);
+}
+.profile-photo{
+    border: 5px solid rgba(128, 128, 128, 0.701);
+    border-radius: 10px;
+    max-width: 100%;
+}
+.hire{
+    border: none;
+    padding: 7px 9px;
+    border-radius: 2px;
+    margin-top: 20px;
+    font-weight: bold;
+    background-color: rgb(41, 40, 38);
+    color: white;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.fa-whatsapp{
+    font-size: 1.1rem;
+    margin-right: 5px;
+}
+.call-me{
+    display: none;
+}
+.hire:hover{
+    background-color: white;
+    color: black;
+}
+
+
+/* Social links */
+.social-icons{
+    text-align: center;
+    margin: 50px 0px;
+}
+.social-icons img{
+    width: 50px;
+    height: auto;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.social-icons img:hover{
+    background-color: var(--btn-bgc-hover);
+}
+
+/* about me */
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 50px;
+    font-size: 1.1rem;
+}
+.about-me{
+    max-width: 500px;
+    padding-left: 40px;
+}
+.about-me p{
+    margin-top: 15px;
+    color: var(--body-color);
+}
+
+/* skills */
+.skills{
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 30px 0px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+.progressBarContainer{
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px 0px;
+    text-align: center;
+}
+.progressBarContainer img{
+    width: 50px;
+    height: 50px;
+}
+.myProgress{
+    min-width: 280px;
+    border: 1px solid black;
+    margin: 6px 0px 6px 10px;
+    border-radius: 3px;
+}
+.myBar1,
+.myBar2,
+.myBar3,
+.myBar4,
+.myBar5{
+    height: 20px;
+    line-height: 20px;
+    background-color: rgb(0, 109, 252);
+    text-align: right;
+    color: white;
+    font-size: 1rem;
+    padding-right: 10px;
+}
+.myBar1{
+    width: 90%;
+}
+.myBar2{
+    width: 80%;
+}
+.myBar3,
+.myBar4{
+    width: 50%;
+}
+.myBar5{
+    width: 60%;
+}
+
+/* portfolio */
+.portfolio{
+    background-color: #000;
+    color: white;
+    width: 100%;
+    padding-bottom: 20px;
+    font-size: 1rem;
+}
+.portfolio h1{
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+}
+.portfolio-links{
+    text-align: center;
+    margin: 30px 0px;
+}
+.portfolio-links a{
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+    padding: 6px 12px;  
+    margin-right: 10px;
+    transition: 0.5s ease-in-out;
+}
+.portfolio-links a:active{
+    color: orange;
+    border-bottom: 1px solid orange;
+}
+.portfolio-links a:hover{
+    border-bottom: 1px solid white;
+}
+.showcase{
+    max-width: 1200px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+.card{
+    margin: 20px;
+    background-color: #888;
+
+}
+.card a img{
+    width: 100%;
+}
+
+.card-text{
+    font-size: 0.8rem;
+    box-sizing: border-box;
+    line-height: 23px;
+    padding: 0px 10px 10px;
+}
+.visit{
+    display: block;
+    text-align: center;
+    padding: 0px 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    border: 1px solid white;
+    border-radius: 3px;
+}
+.visit:hover{
+    color: black;
+    background-color: white;
+}
+
+
+/* Contact  */
+.contact{
+    font-size: 1rem;
+    padding: 30px 10px;
+    background-color: #f0f0f0;
+}
+.contact h1{
+    text-align: center;
+}
+.contact-content{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+.location{
+    line-height: 23px;
+    margin-top: 5px;
+}
+.location p{
+    line-height: 23px;
+    margin: 5px 0px;
+}
+hr{
+    margin: 5px 0px;
+    opacity: 0.15;
+}
+.contact-form{
+    min-width: 312px;
+    max-width: 400px;
+    width: 100%;
+}
+.form-group{
+    margin: 0px 0px 10px;
+}
+label{
+    font-size: 0.8rem;
+}
+input[type="text"],
+input[type="email"],
+textarea{
+    width: 100%;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+input[type="submit"]{
+    margin-top: 5px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: #000;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* footer section */
+footer{
+    font-size: 1.1rem;
+    text-align: center;
+    padding: 30px 0px;
+    background-color: #000;
+    color: white;
+}
+
+
+/* Phone screen */
+@media screen and (max-width: 768px) {
+    body{
+        font-size: 100%;
+    }
+    h1{
+        font-size: 1.5rem;
+    }
+    a{
+        font-size: 1rem;
+    }
+    h2{
+        font-size: 1rem;
+    }
+
+    /* nav links */
+    .nav-links{
+        position: fixed;
+        top: 0;
+        left: unset;
+        background-color: #fff;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 15px;
+        box-shadow: 0px 0px 5px black;
+        z-index: 100;
+    }
+    .logo{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        font-size: 1.2rem;
+        cursor: pointer;
+        color: black;
+        text-decoration: none;
+    }
+    .logo .fa-bars{
+        padding: 5px 10px;
+        border-radius: 5px;
+        margin-right: 5px;
+        transition: 0.5s ease-in-out;
+    }
+    .logo .fa-bars:hover{
+        background-color: #000;
+        color: white;
+    }
+    .logo a{
+        text-decoration: none;
+        color: black;
+    }
+    .nav-links ul li .fa-times{
+        display: block;
+        padding: 20px 10px 0px 0px;
+        font-size: 1rem;
+        cursor: pointer;
+        color: #fff;
+    }
+    .nav-links ul{
+        position: absolute;
+        top: 0;
+        left: -50%;
+        width: 50%;
+        height: 100vh;
+        background-color: black;
+        transition: 1s ease-in-out;
+        text-align: right;
+    }
+    .nav-links ul li{
+        display: block;
+        margin-right: 20px;
+        margin-bottom: 25px;
+    }
+    .call-me{
+        display: unset;
+        margin-top: 0px;
+        padding: 0px 5px;
+        background-color: transparent;
+        color: black;
+        border: 2px solid black;
+        border-radius: 3px;
+    }
+    .call-me:hover{
+        background-color: #000;
+        color: white;
+    }
+
+    /* intro style */
+    .introText-image{
+        flex-direction: column;
+        text-align: center;
+
+    }
+    .introText{
+        max-width: 541px;
+        padding-right: unset !important;
+        padding-bottom: 20px;
+        margin: 0 auto;
+    }
+    .introImage{
+        margin: 0 auto;
+        min-width: 300px;
+    }
+    .profile-photo{
+        border: unset;
+        border-radius: unset;
+    }
+
+    /* about me */
+    .about{
+        flex-direction: column-reverse;  
+        margin-bottom: 0px;      
+    }
+    .about-me{
+        margin: 0 auto;
+        padding: 0px 10px;
+    }
+    .about-me h1{
+        text-align: center;
+    }
+    .about-img{
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    /* skills */
+    .progressBarContainer{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    /* portfolio */
+    .showcase{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .card{
+        margin: 5px;
+    }
+
+    /* contact */
+    .contact{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .contact-content{
+        flex-direction: column;
+    }
+    .location{
+        margin: 0px 0px 30px;
+    }
+}
+
+
+/* Tablet */
+
+@media screen and (max-width: 1014px){
+    /* nav links */
+    .nav-links{
+        position: fixed;
+        top: 0;
+        left: unset;
+        background-color: #fff;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 15px;
+        box-shadow: 0px 0px 5px black;
+        z-index: 100;
+    }
+    .logo{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        font-size: 1.2rem;
+        cursor: pointer;
+        color: black;
+        text-decoration: none;
+    }
+    .logo .fa-bars{
+        padding: 5px 10px;
+        border-radius: 5px;
+        margin-right: 5px;
+        transition: 0.5s ease-in-out;
+    }
+    .logo .fa-bars:hover{
+        background-color: #000;
+        color: white;
+    }
+    .logo a{
+        text-decoration: none;
+        color: black;
+    }
+    .nav-links ul li .fa-times{
+        display: block;
+        padding: 20px 10px 0px 0px;
+        font-size: 1rem;
+        cursor: pointer;
+        color: #fff;
+    }
+    .nav-links ul{
+        position: absolute;
+        top: 0;
+        left: -50%;
+        width: 50%;
+        height: 100vh;
+        background-color: black;
+        transition: 1s ease-in-out;
+        text-align: right;
+    }
+    .nav-links ul li{
+        display: block;
+        margin-right: 20px;
+        margin-bottom: 25px;
+    }
+    .call-me{
+        display: unset;
+        margin-top: 0px;
+        padding: 0px 5px;
+        background-color: transparent;
+        color: black;
+        border: 2px solid black;
+        border-radius: 3px;
+    }
+    .call-me:hover{
+        background-color: #000;
+        color: white;
+    }   
+
+    /* intro section */
+    .introText-image{
+        padding: 70px 20px 0px;
+        align-items: flex-start;
+    }
+    .introText{
+        max-width: 400px;
+        padding-right: 10px;
+        margin: 0 auto;
+    }
+
+    /* about section */
+    .about{
+        align-items: center;
+        padding: 0px 20px;
+    }
+    .about-me{
+        max-width: 400px;
+        padding-left: 30px;
+    }
+}
