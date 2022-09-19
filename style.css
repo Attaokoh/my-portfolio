@@ -397,6 +397,7 @@ footer{
         text-decoration: none;
     }
     .logo .fa-bars{
+        display: inline;
         padding: 5px 10px;
         border-radius: 5px;
         margin-right: 5px;
@@ -519,7 +520,6 @@ footer{
         margin: 0px 0px 30px;
     }
 }
-
 
 /* Tablet */
 
