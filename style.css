@@ -19,9 +19,9 @@ body{
     margin: 0 auto;
     background: linear-gradient(145deg, rgba(241, 241, 241, 0.71), rgba(0, 255, 251, 0.091)), url(img/escheresque.png);
 }
-/* .everything{
+.everything{
     margin-left: 160px;
-} */
+}
 p{
     opacity: 0.8 !important;
     font-weight: normal !important;
@@ -35,10 +35,10 @@ p{
 }
 .nav-links{
     position: fixed;
-    left: 5%;
-    /* background-color: #000;
+    left: 0%;
+    background-color: #000;
     height: 100%;
-    padding: 10% 28px 0px; */
+    padding: 10% 28px 0px;
 }
 .nav-links ul{
     list-style: none;
@@ -50,7 +50,7 @@ p{
 .nav-links ul li a{ 
     font-size: 1rem;
     text-decoration: none;
-    color: goldenrod;
+    color: white;
     width: 50px;
     font-weight: bold;
     transition: 0.5s ease-in-out;
@@ -369,6 +369,10 @@ footer{
         font-size: 1rem;
     }
 
+    .everything{
+        margin-left: unset;
+    }
+
     /* nav links */
     .nav-links{
         position: fixed;
@@ -406,6 +410,13 @@ footer{
         text-decoration: none;
         color: black;
     }
+    .nav-links{
+        position: unset;
+        left: unset;
+        background-color: #000;
+        height: unset;
+        padding: unset;
+    }
     .nav-links ul li .fa-times{
         display: block;
         padding: 20px 10px 0px 0px;
@@ -416,11 +427,10 @@ footer{
     .nav-links ul{
         position: absolute;
         top: 0;
-        left: -50%;
-        width: 50%;
+        left: -40%;
+        width:40%;
         height: 100vh;
         background-color: black;
-        transition: 1s ease-in-out;
         text-align: right;
     }
     .nav-links ul li{
@@ -434,8 +444,8 @@ footer{
         padding: 0px 5px;
         background-color: transparent;
         color: black;
-        border: 2px solid black;
-        border-radius: 3px;
+        border: 1px solid #f0f0f0;
+        border-radius: 2px;
     }
     .call-me:hover{
         background-color: #000;
@@ -514,7 +524,18 @@ footer{
 /* Tablet */
 
 @media screen and (max-width: 1014px){
+    .everything{
+        margin-left: unset;
+    }
+
     /* nav links */
+    .nav-links{
+        position: unset;
+        left: unset;
+        background-color: #000;
+        height: unset;
+        padding: unset;
+    }
     .nav-links{
         position: fixed;
         top: 0;

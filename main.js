@@ -6,18 +6,20 @@ let open = document.querySelector(".fa-bars");
       let navbar = document.querySelector(".nav-links");
 
       open.addEventListener("click", () => {
-        navbar.style.left = "50%";
-      });
-      close.addEventListener("click", () => {
+        navbar.style.left = "40%";
+        navbar.style.transition = "0.5s ease-in";
+    });
+    close.addEventListener("click", () => {
         navbar.style.left = "0%";
+        navbar.style.transition = "0.3s ease-out";
       });
 
 // change nav links color
-let changeColor = document.querySelector("nav")
-      window.addEventListener("scroll", () => {
-        if(window.scrollY >= 3){
-            changeColor.classList.add(".changed")
-        } else{
-            changeColor.classList.remove(".changed")
-        }
-      })
+// let changeColor = document.querySelector("nav")
+//       window.addEventListener("scroll", () => {
+//         if(window.scrollY >= 3){
+//             changeColor.classList.add(".changed")
+//         } else{
+//             changeColor.classList.remove(".changed")
+//         }
+//       })
