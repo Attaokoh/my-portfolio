@@ -37,8 +37,8 @@ p{
     position: fixed;
     left: 0%;
     background-color: #000;
-    height: 100%;
-    padding: 10% 28px 0px;
+    height: 100vh;
+    padding: 15% 28px 0px;
 }
 .nav-links ul{
     list-style: none;
@@ -545,7 +545,7 @@ footer{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 8px 15px;
+        padding: 8px 20px;
         box-shadow: 0px 0px 5px black;
         z-index: 100;
     }
@@ -559,6 +559,7 @@ footer{
         text-decoration: none;
     }
     .logo .fa-bars{
+        display: none;
         padding: 5px 10px;
         border-radius: 5px;
         margin-right: 5px;
@@ -573,40 +574,32 @@ footer{
         color: black;
     }
     .nav-links ul li .fa-times{
-        display: block;
+        display: none;
         padding: 20px 10px 0px 0px;
         font-size: 1rem;
         cursor: pointer;
         color: #fff;
     }
     .nav-links ul{
-        position: absolute;
-        top: 0;
-        left: -50%;
-        width: 50%;
-        height: 100vh;
-        background-color: black;
-        transition: 1s ease-in-out;
-        text-align: right;
+        list-style-type: none;
     }
     .nav-links ul li{
-        display: block;
-        margin-right: 20px;
-        margin-bottom: 25px;
+        display: inline;
+        margin-right: 10px;
+    }
+    .nav-links ul li a{
+        display: inline;
+        color: black;
+    }
+    .nav-links ul li a:focus{
+        text-decoration: underline;
+    }
+    .nav-links ul li a:hover{
+        text-decoration: underline;
     }
     .call-me{
-        display: unset;
-        margin-top: 0px;
-        padding: 0px 5px;
-        background-color: transparent;
-        color: black;
-        border: 2px solid black;
-        border-radius: 3px;
-    }
-    .call-me:hover{
-        background-color: #000;
-        color: white;
-    }   
+        display: none;
+    } 
 
     /* intro section */
     .introText-image{
