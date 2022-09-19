@@ -353,107 +353,6 @@ footer{
     color: white;
 }
 
-/* Tablet */
-
-@media screen and (max-width: 1014px){
-    .everything{
-        margin-left: unset;
-    }
-
-    /* nav links */
-    .nav-links{
-        position: unset;
-        left: unset;
-        background-color: #000;
-        height: unset;
-        padding: unset;
-    }
-    .nav-links{
-        position: fixed;
-        top: 0;
-        left: unset;
-        background-color: #fff;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 8px 20px;
-        box-shadow: 0px 0px 5px black;
-        z-index: 100;
-    }
-    .logo{
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        font-size: 1.2rem;
-        cursor: pointer;
-        color: black;
-        text-decoration: none;
-    }
-    .logo .fa-bars{
-        display: none;
-        padding: 5px 10px;
-        border-radius: 5px;
-        margin-right: 5px;
-        transition: 0.5s ease-in-out;
-    }
-    .logo .fa-bars:hover{
-        background-color: #000;
-        color: white;
-    }
-    .logo a{
-        text-decoration: none;
-        color: black;
-    }
-    .nav-links ul li .fa-times{
-        display: none;
-        padding: 20px 10px 0px 0px;
-        font-size: 1rem;
-        cursor: pointer;
-        color: #fff;
-    }
-    .nav-links ul{
-        list-style-type: none;
-    }
-    .nav-links ul li{
-        display: inline;
-        margin-right: 10px;
-    }
-    .nav-links ul li a{
-        display: inline;
-        color: black;
-    }
-    .nav-links ul li a:focus{
-        text-decoration: underline;
-    }
-    .nav-links ul li a:hover{
-        text-decoration: underline;
-    }
-    .call-me{
-        display: unset;
-    } 
-
-    /* intro section */
-    .introText-image{
-        padding: 70px 20px 0px;
-        align-items: flex-start;
-    }
-    .introText{
-        max-width: 400px;
-        padding-right: 10px;
-        margin: 0 auto;
-    }
-
-    /* about section */
-    .about{
-        align-items: center;
-        padding: 0px 20px;
-    }
-    .about-me{
-        max-width: 400px;
-        padding-left: 30px;
-    }
-}
 
 /* Phone screen */
 @media screen and (max-width: 768px) {
@@ -621,3 +520,105 @@ footer{
     }
 }
 
+
+/* Tablet */
+
+@media screen and (max-width: 1014px){
+    .everything{
+        margin-left: unset;
+    }
+
+    /* nav links */
+    .nav-links{
+        position: unset;
+        left: unset;
+        background-color: #000;
+        height: unset;
+        padding: unset;
+    }
+    .nav-links{
+        position: fixed;
+        top: 0;
+        left: unset;
+        background-color: #fff;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 20px;
+        box-shadow: 0px 0px 5px black;
+        z-index: 100;
+    }
+    .logo{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        font-size: 1.2rem;
+        cursor: pointer;
+        color: black;
+        text-decoration: none;
+    }
+    .logo .fa-bars{
+        display: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        margin-right: 5px;
+        transition: 0.5s ease-in-out;
+    }
+    .logo .fa-bars:hover{
+        background-color: #000;
+        color: white;
+    }
+    .logo a{
+        text-decoration: none;
+        color: black;
+    }
+    .nav-links ul li .fa-times{
+        display: none;
+        padding: 20px 10px 0px 0px;
+        font-size: 1rem;
+        cursor: pointer;
+        color: #fff;
+    }
+    .nav-links ul{
+        list-style-type: none;
+    }
+    .nav-links ul li{
+        display: inline;
+        margin-right: 10px;
+    }
+    .nav-links ul li a{
+        display: inline;
+        color: black;
+    }
+    .nav-links ul li a:focus{
+        text-decoration: underline;
+    }
+    .nav-links ul li a:hover{
+        text-decoration: underline;
+    }
+    .call-me{
+        display: unset;
+    } 
+
+    /* intro section */
+    .introText-image{
+        padding: 70px 20px 0px;
+        align-items: flex-start;
+    }
+    .introText{
+        max-width: 400px;
+        padding-right: 10px;
+        margin: 0 auto;
+    }
+
+    /* about section */
+    .about{
+        align-items: center;
+        padding: 0px 20px;
+    }
+    .about-me{
+        max-width: 400px;
+        padding-left: 30px;
+    }
+}
