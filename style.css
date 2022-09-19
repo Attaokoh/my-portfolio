@@ -24,7 +24,7 @@ body{
 }
 p{
     opacity: 0.8 !important;
-    font-weight: normal !important;
+    font-weight: lighter !important;
     z-index: -100;
 }
 .logo{
@@ -434,7 +434,7 @@ footer{
 
     /* intro section */
     .introText-image{
-        padding: 10px 20px 0px;
+        padding: 80px 20px 0px;
         align-items: flex-start;
     }
     .introText{
@@ -456,25 +456,11 @@ footer{
 
 
 
-/* Phone screen */
+/* =======================
+             Phone screen 
+===========================*/
+
 @media screen and (max-width: 768px) {
-    body{
-        font-size: 100%;
-    }
-    h1{
-        font-size: 1.5rem;
-    }
-    a{
-        font-size: 1rem;
-    }
-    h2{
-        font-size: 1rem;
-    }
-
-    .everything{
-        margin-left: unset;
-    }
-
     /* nav links */
     .nav-links{
         position: fixed;
@@ -513,8 +499,8 @@ footer{
         color: black;
     }
     .nav-links{
-        position: unset;
-        left: unset;
+        position: fixed;
+        top: 0;
         background-color: #000;
         height: unset;
         padding: unset;
@@ -540,25 +526,33 @@ footer{
         margin-right: 20px;
         margin-bottom: 25px;
     }
+    .nav-links ul li a{
+        color: goldenrod;
+
+    }
     .call-me{
         display: inline;
         margin-top: 0px;
         padding: 0px 5px;
         background-color: transparent;
         color: black;
-        border: 1px solid #f0f0f0;
+        border: 2px solid #dbdbdb;
         border-radius: 2px;
+        font-size: 1rem;
+        text-decoration: none;
+        font-weight: lighter;
     }
     .call-me:hover{
         background-color: #000;
         color: white;
+        text-decoration: none !important;
     }
 
     /* intro style */
     .introText-image{
         flex-direction: column;
         text-align: center;
-
+        padding-top: 10px;
     }
     .introText{
         max-width: 541px;
