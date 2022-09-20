@@ -397,10 +397,6 @@ footer{
         margin-right: 5px;
         transition: 0.5s ease-in-out;
     }
-    .logo .fa-bars:hover{
-        background-color: #000;
-        color: white;
-    }
     .logo a{
         text-decoration: none;
         color: black;
@@ -490,10 +486,6 @@ footer{
         border-radius: 5px;
         margin-right: 5px;
         transition: 0.5s ease-in-out;
-    }
-    .logo .fa-bars:hover{
-        background-color: #000;
-        color: white;
     }
     .logo a{
         text-decoration: none;
