@@ -23,3 +23,10 @@ let open = document.querySelector(".fa-bars");
 //             changeColor.classList.remove(".changed")
 //         }
 //       })
+
+    let comingSoon = document.querySelector(".coming-soon")
+    let coming = document.getElementById("coming")
+
+    comingSoon.addEventListener("click", function () {
+        coming.innerText = "Coming soon!";
+    })

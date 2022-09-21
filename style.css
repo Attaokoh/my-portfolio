@@ -23,7 +23,7 @@ body{
     margin-left: 160px;
 }
 p{
-    opacity: 0.8 !important;
+    opacity: 0.9 !important;
     font-weight: lighter !important;
     z-index: -100;
 }
@@ -36,9 +36,9 @@ p{
 .nav-links{
     position: fixed;
     left: 0%;
-    background-color: #000;
+    background-color: #f0f0f0;
     height: 100vh;
-    padding: 15% 28px 0px;
+    padding: 15% 28px 20%;
 }
 .nav-links ul{
     list-style: none;
@@ -50,7 +50,7 @@ p{
 .nav-links ul li a{ 
     font-size: 1rem;
     text-decoration: none;
-    color: white;
+    color: black;
     width: 50px;
     font-weight: bold;
     transition: 0.5s ease-in-out;
@@ -72,6 +72,26 @@ p{
     color: white;
 }
 
+/* Social links */
+.social-icons{
+    margin: 30px 0px;
+    position: absolute;
+    bottom: 10%;
+    display: grid;
+    grid-template-columns: 1r 1r;
+}
+.social-icons img{
+    width: 50px;
+    padding: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.social-icons img:hover{
+    background-color: rgba(128, 128, 128, 0.216);
+}
+
+
 
 /* Intro style */
 .intro{
@@ -82,6 +102,7 @@ p{
     justify-content: center;
     align-items: flex-start;
     padding-top: 50px;
+    padding-bottom: 50px;
 }
 .introText{
     max-width: 500px;
@@ -96,7 +117,7 @@ p{
 .introText p{
     line-height: 23px;
     color: var(--body-color);
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 .profile-photo{
     border: 5px solid rgba(128, 128, 128, 0.701);
@@ -104,7 +125,6 @@ p{
     max-width: 100%;
 }
 .hire{
-    border: none;
     padding: 7px 9px;
     border-radius: 2px;
     font-weight: bold;
@@ -115,7 +135,7 @@ p{
     transition: 0.5s ease-in-out;
 }
 .fa-whatsapp{
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin-right: 5px;
 }
 .call-me{
@@ -127,48 +147,13 @@ p{
 }
 
 
-/* Social links */
-.social-icons{
-    text-align: center;
-    margin: 50px 0px;
-}
-.social-icons img{
-    width: 50px;
-    height: auto;
-    padding: 10px;
-    margin-right: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.5s ease-in-out;
-}
-.social-icons img:hover{
-    background-color: var(--btn-bgc-hover);
-}
-
-/* about me */
-.about{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    margin-bottom: 50px;
-    font-size: 1.1rem;
-}
-.about-me{
-    max-width: 500px;
-    padding-left: 40px;
-}
-.about-me p{
-    margin-top: 15px;
-    color: var(--body-color);
-}
-
 /* skills */
 .skills{
     width: 100%;
     background-color: #f0f0f0;
     padding: 30px 0px;
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 .progressBarContainer{
     display: flex;
@@ -242,10 +227,6 @@ p{
     margin-right: 10px;
     transition: 0.5s ease-in-out;
 }
-.portfolio-links a:active{
-    color: orange;
-    border-bottom: 1px solid orange;
-}
 .portfolio-links a:hover{
     border-bottom: 1px solid white;
 }
@@ -259,7 +240,6 @@ p{
 .card{
     margin: 20px;
     background-color: #888;
-
 }
 .card a img{
     width: 100%;
@@ -277,9 +257,10 @@ p{
     padding: 0px 5px;
     text-decoration: none;
     color: white;
-    font-size: 1.1rem;
+    font-size: 1rem;
     border: 1px solid white;
     border-radius: 3px;
+    margin-top: 10px;
 }
 .visit:hover{
     color: black;
@@ -347,14 +328,31 @@ input[type="submit"]{
 
 /* footer section */
 footer{
-    font-size: 1.1rem;
+    font-size: 1rem;
     text-align: center;
-    padding: 30px 0px;
+    padding: 20px 0px;
     background-color: #000;
     color: white;
 }
+.footer-icon{
+    margin-bottom: 20px;
+    display: none;
+}
+.footer-icon .fa-brands{
+    color: white;
+    font-size: 1.5rem;
+    padding: 10px;
+    border-radius: 50px;
+    
+}
+.footer-icon .fa-brands:hover{
+    background-color: rgba(255, 255, 255, 0.337);
+}
 
-/* Tablet */
+
+/* =======================
+         Tablet screen 
+===========================*/
 @media  (max-width: 1014px){
     .everything{
         margin-left: unset;
@@ -392,15 +390,16 @@ footer{
     }
     .logo .fa-bars{
         display: none;
-        padding: 5px 10px;
-        border-radius: 5px;
-        margin-right: 5px;
-        transition: 0.5s ease-in-out;
     }
     .logo a{
         text-decoration: none;
         color: black;
     }
+
+    .social-icons{
+        display: none;
+    }
+
     .nav-links ul li .fa-times{
         display: none;
         padding: 20px 10px 0px 0px;
@@ -431,23 +430,15 @@ footer{
 
     /* intro section */
     .introText-image{
-        padding: 80px 20px 0px;
+        padding: 80px 20px 30px;
         align-items: flex-start;
     }
     .introText{
         max-width: 400px;
-        padding-right: 10px;
-        margin: 0 auto;
     }
 
-    /* about section */
-    .about{
-        align-items: center;
-        padding: 0px 20px;
-    }
-    .about-me{
-        max-width: 400px;
-        padding-left: 30px;
+    .footer-icon{
+        display: unset;
     }
 }
 
@@ -494,7 +485,7 @@ footer{
     .nav-links{
         position: fixed;
         top: 0;
-        background-color: #000;
+        background-color: rgba(0, 0, 0);
         height: unset;
         padding: unset;
     }
@@ -511,7 +502,7 @@ footer{
         left: -40%;
         width:40%;
         height: 100vh;
-        background-color: black;
+        background-color: rgba(0, 0, 0, 0.95);
         text-align: right;
     }
     .nav-links ul li{
@@ -520,7 +511,7 @@ footer{
         margin-bottom: 25px;
     }
     .nav-links ul li a{
-        color: goldenrod;
+        color: white;
 
     }
     .call-me{
@@ -530,12 +521,14 @@ footer{
         background-color: transparent;
         color: black;
         border: 2px solid #dbdbdb;
-        border-radius: 2px;
+        border-radius: 4px;
         font-size: 1rem;
         text-decoration: none;
         font-weight: lighter;
+        outline: none;
     }
     .call-me:hover{
+        border: 2px solid #000;
         background-color: #000;
         color: white;
         text-decoration: none !important;
@@ -560,23 +553,6 @@ footer{
     .profile-photo{
         border: unset;
         border-radius: unset;
-    }
-
-    /* about me */
-    .about{
-        flex-direction: column-reverse;  
-        margin-bottom: 0px;      
-    }
-    .about-me{
-        margin: 0 auto;
-        padding: 0px 10px;
-    }
-    .about-me h1{
-        text-align: center;
-    }
-    .about-img{
-        margin: 0 auto;
-        margin-top: 20px;
     }
 
     /* skills */
