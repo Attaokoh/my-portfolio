@@ -113,11 +113,15 @@ p{
 }
 .introText h3{
     padding: 10px 0px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 600;
 }
 .introText p{
     line-height: 23px;
     color: var(--body-color);
     margin-bottom: 20px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 200;
 }
 .profile-photo{
     border: 5px solid rgba(128, 128, 128, 0.701);
