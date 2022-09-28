@@ -604,12 +604,16 @@ footer{
     }
 
     /* portfolio */
+    .portfolio{
+        background-color: transparent;
+    }
     .showcase{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display: flex;
+        flex-direction: column;
     }
     .card{
-        margin: 5px;
+        margin: 15px 10px 40px;
+        box-shadow: 0px 0px 15px rgba(139, 139, 139, 0.989);
     }
 
     /* contact */
