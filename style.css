@@ -30,6 +30,10 @@ p{
 .logo{
     display: none;
 }
+.logo a{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+}
 .fa-bars{
     display: none;
 }
@@ -55,6 +59,8 @@ p{
     font-weight: bold;
     transition: 0.5s ease-in-out;
     padding: 5px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
 }
 .nav-links a:active{
     text-decoration: underline;
@@ -109,12 +115,14 @@ p{
     padding-right: 40px;
 }
 .introText h1{
-    padding-bottom:20px;
+    padding-bottom:20px;    
+    font-family: 'Roboto Slab', serif;
+    font-weight: 600;
 }
 .introText h3{
     padding: 10px 0px;
     font-family: 'Roboto Slab', serif;
-    font-weight: 600;
+    font-weight: 400;
 }
 .introText p{
     line-height: 23px;
@@ -137,6 +145,8 @@ p{
     cursor: pointer;
     text-decoration: none;
     transition: 0.5s ease-in-out;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
 }
 .fa-whatsapp{
     font-size: 1rem;
@@ -158,6 +168,8 @@ p{
     padding: 30px 0px;
     text-align: center;
     font-size: 1rem;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 200;
 }
 .progressBarContainer{
     display: flex;
@@ -218,6 +230,8 @@ p{
     color: white;
     text-align: center;
     padding-top: 50px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 600;
 }
 .portfolio-links{
     text-align: center;
@@ -230,6 +244,8 @@ p{
     padding: 6px 12px;  
     margin-right: 10px;
     transition: 0.5s ease-in-out;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
 }
 .portfolio-links a:hover{
     border-bottom: 1px solid white;
@@ -254,6 +270,8 @@ p{
     box-sizing: border-box;
     line-height: 23px;
     padding: 0px 20px 20px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
 }
 .visit{
     display: block;
@@ -265,6 +283,8 @@ p{
     border: 1px solid white;
     border-radius: 3px;
     margin-top: 10px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
 }
 .visit:hover{
     color: black;
@@ -280,6 +300,8 @@ p{
 }
 .contact h1{
     text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 600;
 }
 .contact-content{
     display: flex;
@@ -291,9 +313,15 @@ p{
     line-height: 23px;
     margin-top: 5px;
 }
+.location h2{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+}
 .location p{
     line-height: 23px;
     margin: 5px 0px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 200;
 }
 hr{
     margin: 5px 0px;
@@ -304,11 +332,17 @@ hr{
     max-width: 400px;
     width: 100%;
 }
+.contact-form h2{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+}
 .form-group{
     margin: 0px 0px 10px;
 }
 label{
     font-size: 0.8rem;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 200;
 }
 input[type="text"],
 input[type="email"],
@@ -327,6 +361,8 @@ input[type="submit"]{
     background-color: #000;
     color: white;
     cursor: pointer;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
 }
 
 
@@ -337,6 +373,8 @@ footer{
     padding: 20px 0px;
     background-color: #000;
     color: white;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
 }
 .footer-icon{
     margin-bottom: 20px;
