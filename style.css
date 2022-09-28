@@ -605,7 +605,13 @@ footer{
 
     /* portfolio */
     .portfolio{
-        background-color: transparent;
+        background-color: #f0f0f0;
+    }
+    .portfolio h1{
+        color: black;
+    }
+    .portfolio-links a{
+        color: black;
     }
     .showcase{
         display: flex;
