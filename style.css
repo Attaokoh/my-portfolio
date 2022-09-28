@@ -128,7 +128,7 @@ p{
     padding: 7px 9px;
     border-radius: 2px;
     font-weight: bold;
-    background-color: rgb(41, 40, 38);
+    background-color: rgb(82, 82, 80);
     color: white;
     cursor: pointer;
     text-decoration: none;
@@ -142,8 +142,8 @@ p{
     display: none;
 }
 .hire:hover{
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
 }
 
 
